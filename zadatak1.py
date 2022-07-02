@@ -11,6 +11,8 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray', gray)
 cv.waitKey(0)
 
+# Rotation
+
 
 def rotate(img, angle, rotPoint=None):
     (height, width) = img.shape[:2]
@@ -33,6 +35,6 @@ def translate(img, x, y):
     return cv. warpAffine(img, transMat, dimensions)
 
 
-translated = translate(gray, 100, 100)
+translated = translate(gray, 150, 150)
 cv.imshow(' Translated ', translated)
 cv.waitKey(0)
